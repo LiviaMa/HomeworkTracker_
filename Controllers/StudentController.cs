@@ -40,6 +40,5 @@ namespace HomeworkTracker.Controllers
         {
             return View(repo.GetAll());
         }
-
     }
 }

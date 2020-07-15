@@ -30,6 +30,12 @@ namespace HomeworkTracker.Controllers
             //repository.GetUserByUsername(username);
             return View();
         }
+        [HttpGet]
+        public ActionResult Login()
+        {
+            var user = new User();
+            return View();
+        }
         [HttpPost]
         public ActionResult Login(string username, string password)
         {
