@@ -1,0 +1,13 @@
+﻿@model  IEnumerable<HomeworkTracker.Models.Student>
+@{
+    ViewBag.Title = "List";
+}
+
+
+@foreach (var item in Model)
+{
+    <div>
+        @item.Name
+        <hr />
+    </div>
+}

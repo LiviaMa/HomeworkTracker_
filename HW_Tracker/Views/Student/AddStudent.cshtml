@@ -1,0 +1,15 @@
+﻿@model HomeworkTracker.Models.Student
+
+@{
+    ViewBag.Title = "Student";
+}
+
+<form method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Your name goes here" />
+    <label for="Link from PbInfo">Link from PbInfo:</label>
+    <input type="text" id="link" name="link" placeholder="Your link goes here" />
+    <input type="submit" />
+</form>
+<button type="button" class="btn btn-primary" onclick="window.location.href='@Url.Action("List", "Student")'">Display all students</button>
+
